@@ -1,0 +1,171 @@
+@import url(variables.css);
+*{
+    font-family: "Bellota", system-ui;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.body i{
+    font-size: 7vw;
+}
+.body{
+    width: 100%;
+    overflow: hidden;
+}
+
+.header{
+    width: 60%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: darkcyan; */
+}
+.boxAtras{
+    width: 15%;
+    display: flex;
+    /* background-color: firebrick; */
+}
+.boxAtras img{
+    height: 9vh;
+}
+.boxAtras i{
+    font-size: 3vh;
+    position: absolute;
+    left: 0;
+    top: 3.5vh;
+}
+.header .boxImg{
+    width: 17vw;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    text-align: center;
+    /* background-color: goldenrod; */
+
+}
+.header .boxImg img{
+    object-fit:contain;
+    width: 100%;
+}
+.boxImg h5{
+    position: absolute;
+    color: var(--color-9D1A1A);
+    top: 2vh;
+}
+.main{
+    width: 100%;
+    gap: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5vw;
+    overflow: hidden;
+}
+
+.canjear {
+    /* background-color: firebrick; */
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.canjear h4{
+    color: var(--color-9D1A1A);
+}
+.boxCanjear{
+    background-color: var(--color-703A31);
+    display: flex;
+    width: 85%;
+    height: 6vh;
+    border-radius: 1vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.input1{
+    background-color: var(--color-703A31);
+    
+}
+.body input{
+    outline: none;
+    border: none;
+    border-radius: 1vh;
+    color: var(--color-blanco);
+}
+.validar{
+    background-color: var(--color-2E1108);
+    font-size: 3vw;
+    width: 14vw;
+    height: 4vh;
+    cursor: pointer;
+}
+.validar:hover{
+    border: 1px solid var(--color-blanco);
+}
+
+.sectionCupones {
+    /* background-color: teal; */
+    width: 100%;
+}
+.sectionCupones article{
+    /* background-color: yellow; */
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--color-9D1A1A);
+
+}
+.sectionCupones article p{
+    font-size: 4vw;
+    color: #9d1a1a80;
+}
+.box{
+    margin-top: 3vh;
+    background-color: var(--color-703A31);
+    width: 88vw;
+    color: var(--color-blanco);
+    display: flex;
+    justify-content: space-between;
+    height: 16vh;
+    border: 1vh;
+    font-size: 3vw;
+    gap: 3vw;
+    overflow: hidden;
+}
+.box .boxImg {
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box .boxImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.taller{
+    font-weight: bold;
+}
+.info button{
+    border: none;
+    background-color: var(--color-2E1108);
+    border-radius: 1vh;
+    width: 20vw;
+    height: 3.5vh;
+    font-size: 2.5vw;
+    color: var(--color-blanco);
+    cursor: pointer;
+}
+.info button:hover{
+    border: 1px solid var(--color-blanco);
+}

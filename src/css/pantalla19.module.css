@@ -1,0 +1,134 @@
+@import url(variables.css);
+*{
+    font-family: "Bellota", system-ui;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.body i{
+    font-size: 7vw;
+}
+.body{
+    width: 100%;
+    overflow: hidden;
+}
+
+.header{
+    width: 60%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: darkcyan; */
+}
+.boxAtras{
+    width: 15%;
+    display: flex;
+    /* background-color: firebrick; */
+}
+.boxAtras img{
+    height: 9vh;
+}
+.boxAtrasi{
+    font-size: 3vh;
+    position: absolute;
+    left: 0;
+    top: 3.5vh;
+}
+.header .boxImg{
+    width: 17vw;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    text-align: center;
+    /* background-color: goldenrod; */
+
+}
+.header .boxImg img{
+    object-fit:contain;
+    width: 100%;
+}
+.boxImg h5{
+    position: absolute;
+    color: var(--color-9D1A1A);
+    top: 2vh;
+    left: 38vw;
+}
+.main{
+    width: 100%;
+}
+.categorias {
+    /* background-color: tan; */
+    width: 100%;
+    overflow-x: auto;
+    height: 15vh;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+.productos{
+    padding-top: 3vh;
+    width: 100%;
+    display: flex;
+    padding-left: 8vw;
+    gap: 2vw;
+    overflow: hidden;
+    /* background-color: aqua; */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.producto {
+    /* background-color: yellow; */
+    width: 45vw;
+    height: 20vh;
+    display: flex;
+}
+.box{
+    width: 40vw;
+    height: 100%;
+    border-radius: 1vh;
+    overflow: hidden;
+}
+.main .boxImg{
+    width:100%;
+    height: 13vh;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    text-align: center;
+    /* background-color: goldenrod; */
+
+}
+.main .boxImg img{
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
+.info{
+    width: 100%;
+    height: 7vh;
+    background-color: var(--color-703A31);
+    color: var(--color-blanco);
+    font-size: 2.8vw;
+    padding-left: 3vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.nombre{
+    font-weight: bold;
+}
+
+.main img{
+    width: 20px;
+}
+.x i{
+    cursor: pointer;
+}
+.x i:hover{
+    font-weight: bold;
+    text-shadow: 0 0 3px var(--color-703A31);
+}

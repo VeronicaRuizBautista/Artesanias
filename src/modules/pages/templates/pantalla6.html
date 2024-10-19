@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla6</title>
+    <link rel="stylesheet" href="../../../css/pantalla6.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="box-atras">
+            <img src=".././../../../public/img/Group 53.png" alt="triangulo">
+            <a href="#"><i class='bx bx-arrow-back' style='color:#ffa800' ></i></a>
+        </div>
+        <div class="box-texto">
+            <h2>Nombre de usuario*</h2>
+            <p>*Crea un nombre de usuario de mínimo 5 y máximo de 12 carácteres</p>
+        </div>
+    </header>
+    <form>
+        <div class="box-nombre">
+            <input type="text">
+        </div>
+        <div class="box-numCelu">
+            <h2>Número de celular*</h2>
+            <div class="box-numeros">
+                <div class="codigo">
+                    <select id="select-number" class="clase-numero">
+                        <option value="+51">+51</option>
+                        <option value="+52">+52</option>
+                    </select>
+                </div>
+                <div class="num-celular"><input type="text"></div>
+            </div>
+        </div>
+        <div class="box-numCelu">
+            <h2>Confirma tu celular*</h2>
+            <div class="box-numeros">
+                <div class="codigo">
+                    <select id="select-number" class="clase-numero">
+                        <option value="+51">+51</option>
+                        <option value="+52">+52</option>
+                    </select>
+                </div>
+                <div class="num-celular"><input type="text"></div>
+            </div>
+        </div>
+        <div class="box-contraseña">
+            <h2>Contraseña*</h2>
+            <p>Recuerda crear una contraseña dificil de adivinar</p>
+            <div class="container-contraseña"><input type="text"></div>
+        </div>
+        <div class="box-contraseña">
+            <h2>Confirma tu contraseña*</h2>
+            <p>Recuerda crear una contraseña dificil de adivinar</p>
+            <div class="container-contraseña"><input type="text"></div>
+        </div>
+        <div class="box-sexo">
+            <h2>Sexo</h2>
+            <select class="opciones-sexo">
+                <option value=""></option>
+                <option value="femenino">femenino</option>
+                <option value="masculino">masculino</option>
+                <option value="indefinido">Indefinido</option>
+            </select>
+        </div>
+        <div class="box-fecha-nacimiento">
+            <h2>Fecha de nacimiento</h2>
+            <div class="container-fechas">
+                <select class="box-dia">
+                    <option value="DD">DD</option>
+                    <option value="">01</option>
+                </select>
+                <select class="box-dia">
+                    <option value="MM">MM</option>
+                    <option value="">01</option>
+                </select>
+                <select class="box-dia">
+                    <option value="YYYY">YYYY</option>
+                    <option value="">2024</option>
+                </select>
+            </div>
+        </div>
+    </form>
+    <footer>
+        <div class="box-adelante">
+            <i class='bx bx-chevron-right'></i>
+            <a href="#">Continuar</a>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- import React, { useState } from 'react';
+
+function CustomDatePicker() {
+  const [day, setDay] = useState('');
+  const [month, setMonth] = useState('');
+  const [year, setYear] = useState('');
+
+  const handleDayChange = (e) => setDay(e.target.value);
+  const handleMonthChange = (e) => setMonth(e.target.value);
+  const handleYearChange = (e) => setYear(e.target.value);
+
+  return (
+    <div>
+      <h3>Select a date</h3>
+      <select value={day} onChange={handleDayChange}>
+        <option value="">Day</option>
+        {Array.from({ length: 31 }, (_, i) => (
+          <option key={i} value={i + 1}>{i + 1}</option>
+        ))}
+      </select>
+
+      <select value={month} onChange={handleMonthChange}>
+        <option value="">Month</option>
+        {Array.from({ length: 12 }, (_, i) => (
+          <option key={i} value={i + 1}>{i + 1}</option>
+        ))}
+      </select>
+
+      <select value={year} onChange={handleYearChange}>
+        <option value="">Year</option>
+        {Array.from({ length: 100 }, (_, i) => (
+          <option key={i} value={2024 - i}>{2024 - i}</option>
+        ))}
+      </select>
+      
+      <p>Selected Date: {day}/{month}/{year}</p>
+    </div>
+  );
+}
+
+export default CustomDatePicker; -->
+<!-- 
+
+import React, { useState } from 'react';
+
+const countryCodes = [
+  { code: '+57', country: 'Colombia' },
+  { code: '+52', country: 'Mexico' },
+  { code: '+1', country: 'United States' },
+  { code: '+44', country: 'United Kingdom' },
+  // Agrega más países según necesites
+];
+
+function CountryCodeSelector() {
+  const [selectedCode, setSelectedCode] = useState('');
+
+  const handleChange = (event) => {
+    setSelectedCode(event.target.value);
+  };
+
+  return (
+    <div>
+      <h3>Select your country code</h3>
+      <select value={selectedCode} onChange={handleChange}>
+        <option value="">Select a code</option>
+        {countryCodes.map((country) => (
+          <option key={country.code} value={country.code}>
+            {country.code} - {country.country}
+          </option>
+        ))}
+      </select>
+      <p>Selected Code: {selectedCode}</p>
+    </div>
+  );
+}
+
+export default CountryCodeSelector; -->

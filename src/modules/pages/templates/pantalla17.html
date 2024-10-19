@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla17</title>
+    <link rel="stylesheet" href="../../../css/pantalla17.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="box-atras">
+            <img src=".././../../../public/img/Group 53.png" alt="triangulo">
+            <a href="#"><i class='bx bx-arrow-back' style='color:#ffa800' ></i></a>
+        </div>
+        <div class="box-img">
+            <img src="../../../../public/img/y.jpg" alt="">
+        </div>
+        <div class="descuento invisible">
+            <i class='bx bxs-certification' style='color:#9d1a1a'  ></i>
+            <p>-35%</p>
+        </div>
+    </header>
+    <main>
+        <div class="titulo">
+            <div class="trian-img">
+                <img src="../../../../public/img/Group 53.png" alt="">
+            </div>
+            <h4 class="nombre">Tapiz Chumpi Andino III</h4>
+        </div>
+        <article>
+            <div class="corazon">
+                <i class='bx bx-heart' style='color:#ffa800' onclick="toggleHeart(this)"></i>
+            </div>
+            <div class="info">
+                <span class="precio"> S/.600</span>
+                <span class="precio invisible"> <span class="antiguo">S/.600</span>S/.65  </span>
+                <span class="taller">Taller Awaq Ayllus</span>
+                <p class="dimensiones"><span>Dimensiones:</span> 60 x 80 cm</p>
+                <p class="descripcion"><span>Descripción:</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tempore veniam quaerat vel delectus fugit possimus quidem iste maiores velit, odio architecto debitis non? Tempore incidunt voluptatibus molestiae quasi harum.</p>
+            </div>
+            <div class="envio">
+                <i class='bx bx-check-shield' style='color:#ffa800'  ></i>
+                <p>Cuenta con envio hacia tu ubicación</p>
+            </div>
+            <div class="carrito">
+                <button>
+                    <i class='bx bx-cart-download' style='color:#ffffff'  ></i>
+                    Añadir a mi carrito de compras
+                </button>
+            </div>
+        </article>
+    </main>
+</body>
+<script defer>
+    function toggleHeart(element) {
+    if (element.classList.contains('bx-heart')) {
+        element.classList.remove('bx-heart');
+        element.classList.add('bxs-heart');
+    } else {
+        element.classList.remove('bxs-heart');
+        element.classList.add('bx-heart');
+    }
+}
+
+</script>
+</html>
+
+<!-- import React, { useState } from 'react';
+
+const Corazon = () => {
+  // Definimos el estado para el corazón (vacío o lleno)
+  const [liked, setLiked] = useState(false);
+
+  // Función que alterna el estado del ícono
+  const toggleHeart = () => {
+    setLiked(!liked); // Alterna el estado
+  };
+
+  return (
+    <div className="corazon" onClick={toggleHeart}>
+      {liked ? (
+        <i className='bx bxs-heart' style={{ color: '#ffa800' }}></i>
+      ) : (
+        <i className='bx bx-heart' style={{ color: '#ffa800' }}></i>
+      )}
+    </div>
+  );
+};
+
+export default Corazon; -->
